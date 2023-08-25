@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+
+main{
+    width: 85%;
+    background-color: black;
+    color:white;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    align-items: center;
+    margin-top: 5px ;
+}
+header div span{
+    margin-right: 5px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.heading-logo a img{
+    height: 3.2rem;
+}
+
+.header-search  button{
+    background: none;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 0.2rem;
+
+}
+.header-search button span{
+    margin-left: 10px;
+
+}
+
+nav{
+    border-top: 1px solid rgba(184, 184, 184, 0.226);
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+nav ul{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    align-items: center;
+    font-size:1.3rem;
+    color:grey;
+}
+nav ul li{
+    padding: 2px 24px 2px 24px;
+}
+.active{
+    color:white;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  
+    grid-template-areas: 
+    'main corner1'
+    'main corner2';
+    height: 600px;
+
+}
+.main-entry-content{
+    grid-area: main; 
+    background-size:cover;
+    background-image: url('./img/featured-guitarman.jpg');
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 1.3;
+}
+.main-entry-button{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+    background-color: rgb(1,174,240);
+    color: white;
+    font-weight: bold;
+    letter-spacing:0.18rem ;
+    border: none;
+    margin-bottom: 2rem;
+}
+.main-entry-content h1{
+    font-size: 40px;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+.main-content{
+    width: 75%;
+}
+
+.main-entry-info ul{
+    align-self: center;
+    gap: 1rem;
+}
+.main-entry-info ul li:nth-child(2){
+    margin-left: 10px;
+    list-style: disc;
+}
+
+.main-entry-info , .main-entry-info ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.main-entry-info a img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.entry-content-1{
+    grid-area: corner1;
+    background-image: url('./img/featured-watch.jpg');
+    background-size: cover;
+}
+
+.entry-content-2{
+    grid-area: corner2;
+    background-image: url('./img/featured-beetle.jpg');
+    background-size: cover;
+}
+.entry-button{
+    padding: 0.3rem 0.9rem 0.2rem 0.9rem;
+    text-align: center;
+    background-color: rgb(103,154,35);
+    color: white;
+    font-weight: bold;
+    letter-spacing:0.1rem ;
+    border: none;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.entry-content-1 , .entry-content-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    line-height: 1.3;
+}
+.entry-info ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin-right: 20px;
+    
+}
+.entry-info ul li:nth-child(2){
+    list-style: disc;
+    margin-left: 20px;
+}
+
+
+
