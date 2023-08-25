@@ -7,6 +7,8 @@
 .main-container{
     background-image: url('./img/background.jpg');
     background-size: cover;
+    height: 100%;
+    margin-bottom: 50px;
 }
 .main-screen{
     display: flex;
@@ -203,6 +205,101 @@ section{
 .card-container{
     width: 100%;
     height: 100vh;
+    margin-top: 10px;
+    padding: 30px ;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 
+.card{
+    width: 350px;
+    height: 700px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+.lamp{
+    background-image: url('./img/lamp-400.jpg');
+    background-size: cover;
+}
 
+.meal{
+    background-image: url('./img/cookies-400.jpg');
+    background-size: cover;
+
+}
+.chair{
+    background-image: url('./img/shutterbug-400.jpg');
+    background-size: cover;
+
+}
+
+.card-img{
+    width: 100%;
+    height: 50%;
+}
+.card-img-screen{
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+    transition: background-color, 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(245, 245, 245, 0.801);
+    font-size: 1.5em;
+    
+}
+.card-img-screen span{
+    display: none;
+}
+.card-img-screen:hover span{
+    display: block;
+}
+.card-img-screen:hover{
+    background-color: rgba(0,0,0,0.7);
+    
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 40px;
+}
+
+.card-content h3{
+    font-size:0.86rem;
+    font-weight: 400;
+    color: rgb(153,137,156);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-content h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-container p{
+    font-size: 0.96rem;
+    color: rgb(153,137,156);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.card-links{
+    margin-top: 20px;
+}
+.card-links a{
+    color: rgb(16,84,168);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
